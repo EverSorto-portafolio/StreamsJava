@@ -4,37 +4,46 @@
  */
 package com.mycompany.borrador1;
 
+import Modelos.Modelo2;
 import Services.InterfaceDB1;
 
 /**
  *
  * @author everc
  */
-public class implementarClassInterfaz implements InterfaceDB1 {
-
+public class implementarClassInterfaz implements InterfaceDB1<Modelos.Modelo2> {
+    
+    Modelo2 obj = new Modelo2();
     @Override
-    public String getAll() {
-        return "Usando la interfaz InterfaceDB1 getAll ";
+    public Modelo2 getAll() {
+       obj.setMarca("sin marca");    
+       return  obj;
     }
 
     @Override
-    public String getById(int id) {
-         return "Usando la interfaz InterfaceDB1 getById";
+    public Modelo2 getById(int id) {
+         obj.getMarca();
+       return  obj;
     }
 
     @Override
-    public String insert(String objeto) {
-       return "Usando la interfaz InterfaceDB1 insert";
+    public Modelo2 insert(String objeto) {
+        obj.();
+       return  obj;
     }
 
     @Override
-    public String Update(String objeto) {
-        return "Usando la interfaz InterfaceDB1 Update";    }
+    public Modelo2 Update(String objeto) {
+       
+    }
 
     @Override
-    public String delete(String objeto) {
-       return "Usando la interfaz InterfaceDB1 delete";  
+    public Modelo2 delete(String objeto) {
+      
     }
+
+    
+   
     
     
     

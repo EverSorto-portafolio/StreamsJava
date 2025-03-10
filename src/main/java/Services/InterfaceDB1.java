@@ -8,10 +8,10 @@ package Services;
  *
  * @author everc
  */
-public interface InterfaceDB1 {
-     String getAll();
-    String getById(int id);
-    String insert(String objeto );
-    String Update (String objeto);
-    String delete (String objeto);
+public interface InterfaceDB1<T> {
+     T getAll();
+    T getById(int id);
+    T insert(String objeto );
+    T Update (String objeto);
+    T delete (String objeto);
 }

@@ -4,6 +4,8 @@
  */
 package com.mycompany.borrador1;
 
+import Services.InterfaceDB1;
+
 /**
  *
  * @author everc
