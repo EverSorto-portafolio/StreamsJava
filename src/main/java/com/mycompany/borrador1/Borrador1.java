@@ -3,25 +3,30 @@
  */
 package com.mycompany.borrador1;
 
+import Modelos.EjemploTipo1;
+import Modelos.Modelo2;
 import Services.InterfaceDB1;
 
 public class Borrador1 {
 
     public static void main(String[] args) {
-        InterfaceDB1 interfaz1;
-        interfaz1 = new implementarClassInterfaz();
-        Services.Servicesdb2 implementacionIfaz2;
-        implementacionIfaz2 = new ImplementacionClase2();
-
-        System.out.println(interfaz1.Update("Holamundo"));
-        System.err.println(interfaz1.delete(""));
-        System.out.println(interfaz1.getAll());
-        System.out.println(interfaz1.delete(""));
-
-        System.out.println(implementacionIfaz2.Update("Holamundo"));
-        System.err.println(implementacionIfaz2.delete(""));
-        System.out.println(implementacionIfaz2.getAll());
-        System.out.println(implementacionIfaz2.delete(""));
-
+           implementarClassInterfaz  obj = new implementarClassInterfaz();
+           ImplementacionClase2 obj2 = new ImplementacionClase2();  
+           
+          
+           obj.getAll();  //set  marca
+           obj.getById(1);  // get marca 
+           obj.insert("");  //set  empresa 
+           obj.Update("Interfaz1"); // getempresa    
+           System.out.println(obj.all());
+         
+        System.out.println("----------------------------");
+        
+           obj2.getAll();  //set  marca
+           obj2.getById(1);  // get marca 
+           obj2.insert("");  //set  empresa 
+           obj2.Update("Interfaz1"); // getempresa    
+           System.out.println(obj2.all());
+            
     }
 }

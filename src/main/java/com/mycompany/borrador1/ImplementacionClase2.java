@@ -4,35 +4,45 @@
  */
 package com.mycompany.borrador1;
 
+import Modelos.EjemploTipo1;
+import Modelos.Modelo2;
 import Services.InterfaceDB1;
 
-/**
- *
- * @author everc
- */
-public class ImplementacionClase2 implements Services.Servicesdb2{
 
-     @Override
-    public String getAll() {
-        return "UUsando la interfaz Servicesdb2 getAll ";
+public class ImplementacionClase2 implements InterfaceDB1<EjemploTipo1>{
+
+    EjemploTipo1 obj = new EjemploTipo1();
+    @Override
+    public EjemploTipo1 getAll() {
+       obj.setDireccion("sin marca interfaz 2");    
+       return  obj;
     }
 
     @Override
-    public String getById(int id) {
-         return "UUsando la interfaz Servicesdb2 getById";
+    public EjemploTipo1 getById(int id) {
+        System.out.println( obj.getDireccion());
+       return  obj;
     }
 
     @Override
-    public String insert(String objeto) {
-       return "UUsando la interfaz Servicesdb2 insert";
+    public EjemploTipo1 insert(String objeto) {
+        obj.setNombre("Insert desde interfaz 2");
+       return  obj;
     }
 
     @Override
-    public String Update(String objeto) {
-        return "UUsando la interfaz Servicesdb2 Update";    }
+    public EjemploTipo1 Update(String objeto) {
+        System.out.println( obj.getNombre());
+       return  obj;
+    }
 
     @Override
-    public String delete(String objeto) {
-       return "UUsando la interfaz Servicesdb2 delete";  
+    public EjemploTipo1 delete(String objeto) {
+       System.out.println( obj.getNombre());
+       return  obj;
+    }   
+    
+    public String all(){
+        return obj.toString();
     }
 }

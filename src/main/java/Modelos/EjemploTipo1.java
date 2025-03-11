@@ -1,13 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package Modelos;
 
-/**
- *
- * @author everc
- */
 public class EjemploTipo1 {
     private String nombre;
     private String Direccion;
@@ -27,6 +20,9 @@ public class EjemploTipo1 {
     public void setDireccion(String Direccion) {
         this.Direccion = Direccion;
     }
-    
-    
+
+    @Override
+    public String toString() {
+        return "EjemploTipo1{" + "nombre=" + nombre + ", Direccion=" + Direccion + '}';
+    } 
 }

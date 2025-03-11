@@ -14,9 +14,10 @@ import Services.InterfaceDB1;
 public class implementarClassInterfaz implements InterfaceDB1<Modelos.Modelo2> {
     
     Modelo2 obj = new Modelo2();
+    
     @Override
     public Modelo2 getAll() {
-       obj.setMarca("sin marca");    
+       obj.setMarca("sin marca interfaz 2");    
        return  obj;
     }
 
@@ -28,23 +29,23 @@ public class implementarClassInterfaz implements InterfaceDB1<Modelos.Modelo2> {
 
     @Override
     public Modelo2 insert(String objeto) {
-        obj.();
+        obj.setEmpresa("sim nombre interfaz 2");
        return  obj;
     }
 
     @Override
     public Modelo2 Update(String objeto) {
-       
+        obj.getEmpresa();
+       return  obj;
     }
 
     @Override
     public Modelo2 delete(String objeto) {
-      
+      obj.getMarca();
+       return  obj;
+    }  
+    
+    public String all(){
+        return obj.toString();
     }
-
-    
-   
-    
-    
-    
 }
