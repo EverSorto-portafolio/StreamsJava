@@ -4,11 +4,10 @@ package Services;
 @FunctionalInterface
 public interface IMath {
     
-    Double execute (double e , double b);
+    Double execute (Double a , Double b);
     
-    default double suma(double e , double b){
-    
-    return a + b
+    default Double suma(Double a , Double b){
+    return a + b;
     };
     
 }
