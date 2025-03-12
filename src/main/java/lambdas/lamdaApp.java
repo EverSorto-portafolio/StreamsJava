@@ -1,5 +1,5 @@
 
-package com.mycompany.borrador1;
+package lambdas;
 
 import Services.IMath;
 
@@ -21,7 +21,6 @@ public class lamdaApp {
         return a /b;
         };
         System.out.println( divir.execute(5.0 ,8.0));
-        
     }
     
 }
