@@ -26,7 +26,5 @@ public class AppGeenrica {
         obj2.setMarca("Chinita");
 
         md2.pirnter(obj2);
-
     }
-
 }
