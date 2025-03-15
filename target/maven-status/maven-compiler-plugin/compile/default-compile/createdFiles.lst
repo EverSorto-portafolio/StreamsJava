@@ -3,6 +3,7 @@ com\mycompany\borrador1\implementarClassInterfaz.class
 com\mycompany\borrador1\Borrador1.class
 Services\Servicesdb2.class
 lambdas\lamdaApp.class
+lambdas\ScopeVariable.class
 com\mycompany\borrador1\ImplementacionClase2.class
 Modelos\Modelo2.class
 lambdas\LambdasFor.class

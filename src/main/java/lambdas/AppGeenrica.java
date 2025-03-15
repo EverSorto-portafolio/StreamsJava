@@ -28,3 +28,4 @@ public class AppGeenrica {
         md2.pirnter(obj2);
     }
 }
+ 
