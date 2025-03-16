@@ -6,6 +6,8 @@ package lambdas;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
+import java.util.function.Supplier;
 import java.util.stream.IntStream;
 
 /**
@@ -20,6 +22,9 @@ public class OperadorDeREferencia {
      // repetir.forEach(i ->  numbers.add(i));
         repetir.forEach(numbers::add);
         System.out.println(numbers);
+          
+        Supplier<UUID> getToken  = UUID::randomUUID;
+        System.out.println(getToken.get());
         
     }
 
