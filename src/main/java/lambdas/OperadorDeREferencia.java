@@ -17,8 +17,10 @@ public class OperadorDeREferencia {
     public static void main(String[] args) {
         List<Integer> numbers = new ArrayList<>(10);
         IntStream repetir = IntStream.range(1, 11);
-        repetir.forEach(i ->  numbers.add(i));
+     // repetir.forEach(i ->  numbers.add(i));
+        repetir.forEach(numbers::add);
         System.out.println(numbers);
+        
     }
 
 }
