@@ -10,6 +10,7 @@ import java.util.Random;
 import java.util.UUID;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
+import lombok.ToString;
 
 /**
  *
@@ -27,19 +28,27 @@ public class OperadorDeREferencia {
         Supplier<UUID> getToken = UUID::randomUUID;
         System.out.println(getToken.get());
         
-        Supplier<Prueba1> referenciaConstructor =  () -> new Prueba1();
-        System.out.println(referenciaConstructor.get());
+        //Supplier<Prueba1> rConstructor = ()-> new Prueba1();
+        Supplier<Prueba1> rConstructor = Prueba1::new ;
+        System.out.println(rConstructor.get());
+        
+        
     }
 }
+
 
 class Prueba1 {
 
     private String id;
     private Integer edad;
 
-    public Prueba1() {
-        this.id = UUID.randomUUID().toString();
-        this.edad = new Random().nextInt(99);
+   public  Prueba1() {
+      this.id = UUID.randomUUID().toString();
+      this.edad = new Random().nextInt(100);
+    }
+    
+    public String toString(){
+        return "ID : " + id + " Edad " + edad;
     }
 
 }
