@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 import java.util.UUID;
+import java.util.function.BiPredicate;
 import java.util.function.Supplier;
 import java.util.stream.IntStream;
 import lombok.ToString;
@@ -32,6 +33,11 @@ public class OperadorDeREferencia {
         Supplier<Prueba1> rConstructor = Prueba1::new ;
         System.out.println(rConstructor.get());
         
+        
+      //  BiPredicate<String,String> nombre = (x,y)-> x.equals(y);
+          BiPredicate<String, String> nombre = String::equals;
+        boolean aplicar = nombre.test("I am", "Bat man");
+        System.err.println(aplicar);
         
     }
 }
